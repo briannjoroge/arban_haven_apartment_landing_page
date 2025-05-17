@@ -17,6 +17,7 @@ html {
   --color-white-lighter: #f6f4eb;
   --color-dark-blue: #021526;
   --color-yellow: #ffeb00;
+  --color-yellow-light: #f9cb43;
 }
 
 body {
@@ -122,3 +123,98 @@ body {
     gap: 1rem;
   }
 }
+
+/* Hero section Stylings */
+.hero-container {
+  height: 85vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.hero-content {
+  padding: 2rem 3rem;
+  width: 50%;
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content h1 {
+  font-size: 5rem;
+  color: var(--color-yellow);
+  margin-bottom: 2rem;
+}
+
+.hero-content p {
+  font-size: 2.5rem;
+  font-family: var(--secondary-font);
+  color: var(--color-yellow-light);
+}
+
+.hero-content a {
+  margin-top: 4rem;
+  padding: 1rem 2rem;
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: var(--color-white-light);
+  background-color: var(--color-dark-blue);
+  border-radius: 10rem;
+}
+
+.cta-button {
+  padding: 1rem 2rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  transform: scale(1.3);
+}
+
+.hero-image {
+  width: 50%;
+  height: 85vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.5s ease-in-out;
+}
+
+.hero-image:hover img {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 48.75em) {
+  .hero-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hero-content,
+  .hero-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-image img {
+    height: auto;
+  }
+
+  .hero-image:hover img {
+    transform: none;
+  }
+
+  .cta-button:hover {
+    transform: none;
+  }
+}
+
+/* End of Hero Section Stylings */
