@@ -1,0 +1,25 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-font: var(font-family: "Poppins", sans-serif;);
+  --secondary-font: var(font-family: "Roboto", sans-serif;);
+  --color-primary: #1d5d9b;
+  --color-secondary: #75c2f6;
+  --color-white-light: #f6f4eb;
+  --color-white-lighter: #f6f4eb;
+  --color-dark-blue: #021526;
+  --color-yellow: #ffeb00;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--primary-font);
+}
