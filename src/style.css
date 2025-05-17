@@ -9,8 +9,8 @@ html {
 }
 
 :root {
-  --primary-font: var(font-family: "Poppins", sans-serif;);
-  --secondary-font: var(font-family: "Roboto", sans-serif;);
+  --primary-font: font-family: "Poppins", sans-serif;
+  --secondary-font: font-family: "Roboto", sans-serif;
   --color-primary: #1d5d9b;
   --color-secondary: #75c2f6;
   --color-white-light: #f6f4eb;
@@ -22,4 +22,103 @@ html {
 body {
   font-size: 1.6rem;
   font-family: var(--primary-font);
+}
+
+.header {
+  background: var(--color-white-light);
+}
+
+.header-navigation {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-navigation-logo {
+  color: var(--color-primary);
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-navigation-logo img {
+  width: 7rem;
+}
+
+.header-logo-link-wrapper {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-primary);
+}
+
+.header-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.header-nav-list-item a {
+  text-decoration: none;
+  color: var(--color-primary);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.header-cta-btn {
+  text-decoration: none;
+  list-style: none;
+  background-color: var(--color-primary);
+  color: var(--color-white-light);
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+}
+
+.menu-toggle-button {
+  display: none;
+}
+
+@media screen and (max-width: 59.375em) {
+  .header-navigation-logo {
+    font-size: 1.2rem;
+  }
+
+  .header-nav-list-item a {
+    font-size: 1.7rem;
+  }
+
+  .header-cta-btn {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 48.75em) {
+  .header-navigation {
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .header-nav {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    transform: translateX(500px);
+    display: none;
+  }
+
+  .header-nav-list {
+    flex-direction: column;
+  }
+  .menu-toggle-button {
+    font-size: 3rem;
+    color: var(--color-primary);
+    display: flex;
+    gap: 1rem;
+  }
 }
