@@ -216,5 +216,67 @@ body {
     transform: none;
   }
 }
-
 /* End of Hero Section Stylings */
+
+/* Listing nav-section stylings */
+.listing-container {
+  background-color: var(--color-secondary);
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.listing-nav {
+  width: 80%;
+  padding: 1rem 2rem;
+  background-color: var(--color-secondary);
+}
+
+.listing-nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.listing-nav-list a {
+  text-decoration: none;
+  background-color: var(--color-dark-blue);
+  color: var(--color-white-light);
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  transition: color 0.5s ease;
+}
+
+.listing-nav-items a:hover {
+  color: var(--color-secondary);
+}
+
+@media screen and (max-width: 1000px) {
+  .listing-nav-list a {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .listing-nav {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .listing-nav {
+    padding: 0;
+  }
+
+  .listing-nav-list {
+    gap: 2.5rem;
+    justify-content: space-between;
+  }
+}
+/* End of listing nav-section stylings */
