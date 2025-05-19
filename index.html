@@ -41,7 +41,9 @@
             <li class="header-nav-list-item">
               <a href="#contact-us">Contact</a>
             </li>
-            <li><a href="#faq.html" class="header-cta-btn">FAQs</a></li>
+            <li>
+              <a href="faq.html" class="header-cta-btn" target="_blank">FAQs</a>
+            </li>
           </ol>
         </nav>
         <button class="menu-toggle-button">
@@ -89,28 +91,32 @@
 
       <div class="house-card-container">
         <div class="house-card-item" id="single-room">
-          <a href="#single-room.html" class="property-card">
+          <a
+            href="./src/single-room.html"
+            class="property-card"
+            target="_blank"
+          >
             <img src="images/single-room-1.jpeg" alt="Single Room" />
             <h2>Single Room</h2>
             <p>Starting from Ksh 3,500/month</p>
           </a>
         </div>
         <div class="house-card-item" id="bedsitter">
-          <a href="#bedsitter.html" class="property-card">
+          <a href="bedsitter.html" class="property-card">
             <img src="images/bedsitter-1.jpeg" alt="Bedsitter House" />
             <h2>Bedsitters / Studio Apartment</h2>
             <p>Starting from Ksh 5,500/month</p>
           </a>
         </div>
         <div class="house-card-item" id="one-bedroom">
-          <a href="#one-bedroom.html" class="property-card">
+          <a href="one-bedroom.html" class="property-card">
             <img src="images/1bedroom-1.jpeg" alt="One Nedroom House" />
             <h2>1 Bedroom</h2>
             <p>Starting from Ksh 8,500/month</p>
           </a>
         </div>
         <div class="house-card-item" id="two-bedroom">
-          <a href="#two-bedroom.html" class="property-card">
+          <a href="two-bedroom.html" class="property-card">
             <img src="images/2bedroom-1.jpeg" alt="Bedsitter House" />
             <h2>2 Bedroom</h2>
             <p>Starting from Ksh 10,500/month</p>
@@ -124,7 +130,7 @@
     <div class="contact-form">
       <h2>Contact</h2>
       <form action="">
-        <div class="form-group">
+        <div class="form-group" id="form">
           <label for="first-name">First Name:</label>
           <input
             type="text"
