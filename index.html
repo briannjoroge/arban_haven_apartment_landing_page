@@ -32,10 +32,16 @@
         <nav class="header-nav">
           <ol class="header-nav-list">
             <li class="header-nav-list-item"><a href="#">Home</a></li>
-            <li class="header-nav-list-item"><a href="#">About Us</a></li>
-            <li class="header-nav-list-item"><a href="#">Listings</a></li>
-            <li class="header-nav-list-item"><a href="#">Contact</a></li>
-            <li><a href="#" class="header-cta-btn">FAQs</a></li>
+            <li class="header-nav-list-item">
+              <a href="#listing">About Us</a>
+            </li>
+            <li class="header-nav-list-item">
+              <a href="#listing">Listings</a>
+            </li>
+            <li class="header-nav-list-item">
+              <a href="#contact-us">Contact</a>
+            </li>
+            <li><a href="#faq.html" class="header-cta-btn">FAQs</a></li>
           </ol>
         </nav>
         <button class="menu-toggle-button">
@@ -61,44 +67,50 @@
     </section>
 
     <!-- Listing section -->
-    <section class="listings">
+    <section class="listings" id="listing">
       <div class="listing-container">
         <nav class="listing-nav">
           <ul class="listing-nav-list">
-            <li class="listing-nav-items"><a href="#">Single Rooms</a></li>
             <li class="listing-nav-items">
-              <a href="#">Bedsitters / Studio Apartment</a>
+              <a href="#single-room">Single Rooms</a>
             </li>
-            <li class="listing-nav-items"><a href="#">1 Bedroom</a></li>
-            <li class="listing-nav-items"><a href="#">2 Bredroom</a></li>
+            <li class="listing-nav-items">
+              <a href="#bedsitter">Bedsitters / Studio Apartment</a>
+            </li>
+            <li class="listing-nav-items">
+              <a href="#one-bedroom">1 Bedroom</a>
+            </li>
+            <li class="listing-nav-items">
+              <a href="#two-bedroom">2 Bredroom</a>
+            </li>
           </ul>
         </nav>
       </div>
 
       <div class="house-card-container">
-        <div class="house-card-item">
-          <a href="#" class="property-card">
+        <div class="house-card-item" id="single-room">
+          <a href="#single-room.html" class="property-card">
             <img src="images/single-room-1.jpeg" alt="Single Room" />
             <h2>Single Room</h2>
             <p>Starting from Ksh 3,500/month</p>
           </a>
         </div>
-        <div class="house-card-item">
-          <a href="#" class="property-card">
+        <div class="house-card-item" id="bedsitter">
+          <a href="#bedsitter.html" class="property-card">
             <img src="images/bedsitter-1.jpeg" alt="Bedsitter House" />
             <h2>Bedsitters / Studio Apartment</h2>
             <p>Starting from Ksh 5,500/month</p>
           </a>
         </div>
-        <div class="house-card-item">
-          <a href="#" class="property-card">
+        <div class="house-card-item" id="one-bedroom">
+          <a href="#one-bedroom.html" class="property-card">
             <img src="images/1bedroom-1.jpeg" alt="One Nedroom House" />
             <h2>1 Bedroom</h2>
             <p>Starting from Ksh 8,500/month</p>
           </a>
         </div>
-        <div class="house-card-item">
-          <a href="#" class="property-card">
+        <div class="house-card-item" id="two-bedroom">
+          <a href="#two-bedroom.html" class="property-card">
             <img src="images/2bedroom-1.jpeg" alt="Bedsitter House" />
             <h2>2 Bedroom</h2>
             <p>Starting from Ksh 10,500/month</p>
@@ -157,5 +169,26 @@
       </form>
     </div>
     <!-- End of form section -->
+
+    <!-- Footer section -->
+    <footer class="footer-section" id="contact-us">
+      <div class="footer-content">
+        <h2>Contact Urban Haven Apartments</h2>
+        <p>Phone: <a href="tel:+254718764327">+254 718 764 327</a></p>
+        <p>
+          Email:
+          <a href="mailto:urhaven@apartments.com">urhaven@apartments.com</a>
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-icon">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- End of footer section -->
   </body>
 </html>
